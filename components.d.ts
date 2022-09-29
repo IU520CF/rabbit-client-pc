@@ -10,6 +10,7 @@ declare module '@vue/runtime-core' {
     RouterView: typeof import('vue-router')['RouterView']
     XtxFooter: typeof import('./src/components/XtxFooter.vue')['default']
     XtxHeader: typeof import('./src/components/XtxHeader.vue')['default']
+    XtxHeaderNav: typeof import('./src/components/XtxHeaderNav.vue')['default']
     XtxLayout: typeof import('./src/components/XtxLayout.vue')['default']
     XtxTopNav: typeof import('./src/components/XtxTopNav.vue')['default']
   }
