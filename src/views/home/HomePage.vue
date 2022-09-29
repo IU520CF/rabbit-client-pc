@@ -1,11 +1,17 @@
 <script setup lang="ts">
-import { useUserStore } from "@/stores/userStore";
+import XtxRequestManager from "@/utils/XtxRequestManager";
 
-const userStore = useUserStore();
-userStore.$patch({ profile: { token: "test token" } });
+XtxRequestManager.instance
+  .request<{ msg: string }, { a: number; b: number }>({
+    url: "",
+    method: "",
+    data: { a: 1, b: 2 },
+    params: {},
+  })
+  .then((data) => {
+    data.msg;
+  });
 </script>
 <template>
-  <div class="box">Home Page</div>
+  <div>HomePage</div>
 </template>
-
-<style lang="less"></style>
